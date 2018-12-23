@@ -1,5 +1,6 @@
-document.getElementById("myBtn").addEventListener("click", displayDate);
+document.getElementById("myBtn").addEventListener("click", addItem);
 
-function displayDate() {
-  document.getElementById("print").innerHTML = Date();
+function addItem() {
+	let item = document.getElementById("field").value;
+	document.getElementById("print").appendChild(document.createTextNode(item));
 }
