@@ -1,3 +1,5 @@
-addEventListener('load', function(e) {
-  document.querySelector('#test').innerHTML = 'javascript stuff';
-});
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+  document.getElementById("print").innerHTML = Date();
+}
