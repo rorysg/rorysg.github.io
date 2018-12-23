@@ -9,4 +9,10 @@ function addItem() {
 	document.getElementById("list").appendChild(li);
 
 	document.getElementById("field").value = "";
+	
+	li.onclick = removeItem;
+}
+
+function removeItem() {
+	this.parentElement.removeChild(this);
 }
