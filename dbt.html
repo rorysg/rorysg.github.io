@@ -18,13 +18,17 @@
 		<label for="pills">Pills taken</label>
 
 		<ul id="moods">
-			<li>Depression <input type="range" min="1" max="10" value="7" class="slider" id="depression"></li>
-			<li>Anxiety <input type="range" min="1" max="10" value="6" class="slider" id="anxiety"></li>
+			<li>Anxiety <input id="anxiety" type="number"></li>
+			<li>Sadness <input id="sadness" type="number"></li>
+			<li>Energy <input id="energy" type="number"></li>
+			<li>Joy <input id="sadness" type="number"></li>
 		</ul>
 		
 		<textarea name="notes"></textarea> Enter extra notes here
 	
 		<p><button id="save">Save card</button></p>
+		<br><br>
+		<p><button id="load">Load card</button></p>
     
 		<script src="/script.js"></script>
 	</body>
